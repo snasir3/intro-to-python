@@ -1,37 +1,72 @@
-# Session 3 Exercises
+ # Session 3 Exercises
 
 ## Section A
 # 1. Ask for the user's name, if they are called "Bob", print "Welcome Bob!".
+name = input("what is your name")
+if(name == "Bob"):
+  print("hello", name)
 
 
 
 # 2. Ask for the user's name, if they are not called "Alice", print "You're not Alice!".
-
-
+name = input("what is your name")
+if(name != "Alice"):
+  print("You are not Alice")
 
 # 3. Ask the user for a password, if they enter the password "qwerty123", print "You have successfully logged in". 
 #   If they get it wrong, print "Password failure".
+password = input("Enter password: ")
+if(password == "qwerty123"):
+  print("You have successfully logged in")
+else:
+  print("Password failure")
+  
 
 
 
 # 4. Ask the user to enter a number, if the number is even, print "Even", otherwise print "Odd".
-
+num = input("please enter a number")
+if(num%2 == 0):
+  print("number is Even")
+else:
+  print("number is Odd")
 
 
 # 5. Ask the user for 2 different numbers, if the total of the two numbers is over 21, print "Bust" otherwise print "Safe"
-
+n1 = input("Enter first number: ")
+n2 = input("Enter Second number: ")
+sum = n1+n2
+if(sum > 21):
+  print("Bust")
+else:
+  print("safe")
 
 
 # 6. Ask the user to enter the length and width of a shape and check if it is a square or not.
-
-
+len = input("enter length ")
+width = input("enter width ")
+if len == width:
+  print("sqaure")
+else:
+  print("not square")
 
 # 7. You have had a great year and are going to offer a bonus of 10% to any employee who has a service of over 3 years. 
 #   Ask the user to input their current salary and years of service and print out their salary and their bonus or "No bonus" if they are not receiving one.
+sal = input("Enter your salary ")
+service = input("Enter your service ")
+if service > 3:
+  print("Bonus")
+else:
+  print("No bonus")
 
 
 
 # 8. Take a whole number input, if it's positive, print out the number cubed, if it is a negative, print out half its value.
+num = input("Enter a whole number")
+if num >=0:
+  print(num**3)
+else:
+  print(num/2)
 
 
 
